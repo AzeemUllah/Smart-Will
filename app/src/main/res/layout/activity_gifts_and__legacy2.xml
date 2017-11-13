@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smart_will.Gifts_and_Legacy2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary">
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Gifts_and_legacy"
+                android:textColor="@android:color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center"
+                />
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/back" />
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/png" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingBottom="05dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:paddingBottom="05dp">
+
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Gift to charity?"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#2a96d3"/>
+
+
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="05dp"
+            android:orientation="vertical"
+            >
+
+
+
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:hint="Charity Name\nExample: British Heart Foundation" />
+
+
+            <EditText
+                android:id="@+id/cn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:hint="Charity Number\nExample: 00617171749" />
+
+
+
+
+            <EditText
+                android:id="@+id/ga1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:hint="Gift Name or Amount\nExample: My golf-clubs or 20,000" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="05dp">
+
+
+
+            <EditText
+                android:id="@+id/ed2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:hint="Charity Name\nExample: British Heart Foundation" />
+
+
+            <EditText
+                android:id="@+id/cn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:hint="Charity Number\nExample: 00617171749" />
+
+
+
+
+            <EditText
+                android:id="@+id/ga2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:hint="Gift Name or Amount\nExample: My golf-clubs or 20,000" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="05dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+
+
+            <EditText
+                android:id="@+id/ed3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:hint="Charity Name\nExample: British Heart Foundation" />
+
+
+            <EditText
+                android:id="@+id/cn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:hint="Charity Number\nExample: 00617171749" />
+
+
+
+
+            <EditText
+                android:id="@+id/ga3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:hint="Gift Name or Amount\nExample: My golf-clubs or 20,000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="05dp">
+
+
+            <TextView
+                android:id="@+id/addfield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Add More+"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#2a96d3"
+                android:onClick="add"/>
+
+
+
+
+            <EditText
+                android:id="@+id/up1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:visibility="gone"
+               />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="100dp">
+
+            <Button
+                android:id="@+id/gftlegcynext"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/next_button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smart_will.Special_request">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="10dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary">
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Special_request"
+                android:textColor="@android:color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center"
+                />
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/back" />
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/special_progress" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingBottom="05dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:text="Would you like to be Buried or cremated" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/Rbg1">
+
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Buried" />
+
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cremated" />
+            </RadioGroup>
+            <!--<Button-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:background="@drawable/white_button"-->
+                <!--android:text="Buried"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="#acacae"-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_marginRight="10dp"/>-->
+
+
+            <!--<Button-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:background="@drawable/white_button"-->
+                <!--android:text="Cremated"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="#acacae"-->
+                <!--android:textSize="17dp"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:text="Are you home owner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/Rbg2">
+
+                    <RadioButton
+                        android:id="@+id/r3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/r4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+            </LinearLayout>
+        <!--seperator-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Would you like to certain piece of music Played at your funeral?"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="05dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/music"
+                android:gravity="center"
+                android:backgroundTint="@android:color/darker_gray"
+                android:inputType="textEmailAddress"
+                android:hint="Eg:All you need is love by the beatless"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <!--seperator-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="05dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Would you like to leave a Video message to your loved ones?\n(Max: 3 minutes)"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <!--center video recording button layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="@color/gray"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="05dp">
+
+                <TextView
+                    android:id="@+id/uploading"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:text="Uploading Video..."
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/uploaded"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:text="Video Uploaded.\nPress button below to retake."
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"/>
+
+
+                    <Button
+                    android:id="@+id/capturevideo1"
+                    android:layout_width="170dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/white_button"
+                    android:text="Start Recording"
+                    android:textSize="15dp"
+                    android:textColor="#acacae"
+                    android:textAllCaps="false"/>
+
+
+                <ProgressBar
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/uploadSpinner"
+                    android:visibility="gone"/>
+
+
+                <!--<Button-->
+                        <!--android:id="@+id/save"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:background="@drawable/white_button"-->
+                        <!--android:text="Save"-->
+                        <!--android:textColor="#acacae"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:textSize="17dp"-->
+                        <!--android:layout_marginRight="10dp"/>-->
+
+                    <Button
+                        android:id="@+id/retake"
+                        android:layout_width="170dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/white_button"
+                        android:text="Retake"
+                        android:visibility="gone"
+                        android:textColor="#acacae"
+                        android:textAllCaps="false"
+                        android:textSize="17dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--seperator-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Would you like information about a prepaid funeral plan?"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/Rbg3">
+
+                <RadioButton
+                    android:id="@+id/r5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/r6"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <!--<Button-->
+                <!--android:id="@+id/addspouse"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/white_button"-->
+                <!--android:text="Yes"-->
+                <!--android:textColor="#acacae"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="17dp"-->
+                <!--android:layout_marginRight="10dp"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/addspouse1"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/white_button"-->
+                <!--android:text="No"-->
+                <!--android:textColor="#acacae"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="17dp"/>-->
+        </LinearLayout>
+
+        <!--seperator-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Are there any other requests you would like to make? Please state"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/darker_gray"
+                android:inputType="textEmailAddress"
+                android:id="@+id/sprq"
+                android:gravity="center"
+                android:layout_marginTop="-20dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/darker_gray"
+                android:inputType="textEmailAddress"
+                android:id="@+id/updateSpecialRequestId"
+                android:visibility="gone"
+                android:layout_marginTop="-20dp"/>
+
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/spNext"
+                    android:layout_width="160dp"
+                    android:layout_height="45dp"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/next_button" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

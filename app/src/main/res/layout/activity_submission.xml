@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smart_will.Submission">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary">
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Submission"
+                android:textColor="@android:color/white"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center"
+                />
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/back" />
+        </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/submission_progress" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/png" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="05dp">
+
+
+            <!--button layout start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="05dp">
+
+
+                <Button
+                    android:id="@+id/vsummary"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/next_button"
+                    android:text="View Summary"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:textAllCaps="false"/>
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/imageButton"-->
+                    <!--android:layout_width="120dp"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:background="@drawable/next_button"-->
+                    <!--android:text="Edit"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textSize="17dp"-->
+                    <!--android:textColor="#ffffff"/>-->
+
+            </LinearLayout>
+            <!--button layout end-->
+
+            <!--seperator-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingBottom="05dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Would you prefer Smart-will (Free) or local solicitor to write the will?"
+                    android:textAlignment="center"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="05dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(There will be a charge for this)"
+                    android:textAlignment="center"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/termsAndConditions"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:onClick="Tc"
+                    android:text="Terms and Conditions"
+                    android:textColor="@color/blue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/so"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/next_button"
+                    android:text="Local Expert"
+                    android:textSize="17dp"
+                    android:onClick="solicitor"
+                    android:textAllCaps="false"
+                    android:visibility="visible"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/sm"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/next_button"
+                    android:text="Smart-will"
+                    android:textAllCaps="false"
+                    android:visibility="visible"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

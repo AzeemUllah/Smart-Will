@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Smart will</string>
+    <string name="signin">Sign in</string>
+    <string name="sign_up">Sign up</string>
+
+    <string name="edittext_hint"><font size="18">Select Date of Birth</font></string>
+
+
+
+    <string name="Executors">Executors</string>
+    <string name="Spouse">Spouse</string>
+    <string name="Guardians">Guardians</string>
+    <string name="Gifts_and_legacy">Gifts and Legacy</string>
+    <string name="Gifts">Gifts</string>
+    <string name="Gifts_and_Legacy2">Gifts and Legacy</string>
+    <string name="Gifts2">Gifts</string>
+    <string name="Residue_of_estate">Residue of estate</string>
+    <string name="Residue_of_estate2">Residue of estate</string>
+    <string name="Special_request">Special Request</string>
+    <string name="Submission">Submission</string>
+    <string name="thankyou">Thank you</string>
+    <string name="thankyou2">Thank you</string>
+    <string name="thankyou3">Thank you</string>
+    <string name="Terms_condition">Terms And Condition</string>
+    <string name="Info_block">Info Block here</string>
+
+    <string name="Heading1"> <b>TERMS AND CONDITIONS OF WILL WRITING SERVICE</b></string>
+    <string name="Text1">Please read this Terms and Conditions for our Will Writing Service. Your continued use of this website constitutes an Agreement to be legally bound by these Terms and Conditions.\n\n
+        This Smart Will Smartphone application (hereinafter referred to as “Application”) details the services provided by Pride Solutions UK Ltd. This application is owned and operated by Pride Solutions UK Ltd.\n\n
+        By accessing this application, you agree to be bound by the Terms and Conditions (hereinafter referred to as “Terms”). If you disagree with any part of the Terms then you may not access the application. You accept these Terms by clicking “ACCEPT”.\n\n
+        Smart Will is in the business of generating free wills for its clients. Users of our services are allowed to input their details on our application platform. We then write the will and send it to you for execution and attestation after which the complete will is sent back to us.\n\n
+        We require that Smart Will be a joint executor of the will. However, you retain the right to remove our Company as an executor. You also have the option of choosing a solicitor for any legal advice from our network at a price agreeable between the parties.\n\n</string>
+    <string name="Heading2"><b>Storage of the will</b></string>
+    <string name="Text2">For the service to be free, smart will require for the will to be stored in our secure unit. The will must be returned in the prepaid envelope, signed by testator and by two independent witnesses. If you would like to store the will yourself please contact us first at hello@smart-will.co.uk</string>
+    <string name="Heading123"><b>Updates to the will</b></string>
+    <string name="Text123">If you would like to update or make changes to the will please contact us at hello@smart-will.co.uk from the email you registered with us.  (This includes self-storage)</string>
+    <string name="Heading3"><b>Personal data</b></string>
+    <string name="Text3">Any information and personal data provided by you for the drafting of your will will be recorded and only used in accordance to our Data Protection Policy.\n\n
+    In the event of termination of our agreement, we agree to erase all data and information provided by you and all copies of any part of the information and data provided by you from our systems.\n\n
+   All personal data we acquire shall only be used for the purposes of drafting your will and shall not be further processed or disclosed without your consent.\n\n
+    If the user chooses ‘Local Solicitor’ to draught the will, we reserve the right to pass on your details to our local firm of solicitors in your region.</string>
+    <string name="Heading4"><b>Intellectual Property</b></string>
+    <string name="Text4">The application and all of its original content are the sole property of Smart Will and are as such, fully protected by the appropriate international copyright and other intellectual property rights laws.\n\n
+Permission must be sought from Smart Will before the reproduction, redistribution, retransmission publication or any commercial use of material available on the application. You may download material for personal use.\n\n
+You acknowledge that you do not acquire intellectual property rights by downloading copyright material.</string>
+    <string name="Heading5"><b>Termination</b></string>
+    <string name="Text5">Smart Will reserves the right to terminate your access to the application without any advance notice. You must not access the Website via another username. You may also terminate our relationship at any time by discontinuing use of the Website.\n\n
+These Terms survive termination and continue to apply indefinitely.</string>
+    <string name="Heading6"><b>Links to other Sites</b></string>
+    <string name="Text6">Our site does contain a number of links to other websites and online resources that are not owned or controlled by Smart Will. Smart Will has no control over and therefore cannot assume responsibility for the content or general practices of any of these third party sites and/ or services.</string>
+    <string name="Heading7"><b>Governing Law</b></string>
+    <string name="Text7">These Terms shall be governed and interpreted according to the Laws of England. You agree that the courts of England shall have exclusive jurisdiction to determine any dispute arising from the use of the Terms.</string>
+    <string name="Heading8"><b>General</b></string>
+    <string name="Text8">These Terms constitute the entire agreement between you and Smart Will. If any provision of these Terms is held invalid or unenforceable by any court of final Jurisdiction the remainder Terms shall be construed to remain fully valid, enforceable and binding.\n\n
+You affirm to have entered into this Agreement in your own will, devoid of any fraud, undue influence or mistake.\n\n
+The failure by Smart Will to enforce any provision of these Terms shall not be construed as a waiver or limitation of its right to subsequently enforce and compel strict compliance with every provision of these Terms.\n\n
+You may not assign or transfer your rights under these Terms.</string>
+</resources>

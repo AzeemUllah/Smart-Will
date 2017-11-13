@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smart_will">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false" />
+
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:alwaysRetainTaskState="true"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".testator_details"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".viewSummary" />
+        <activity android:name=".Dispatcher" />
+        <activity android:name=".Special_request" />
+        <activity android:name=".Guardians" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            </activity>
+        <activity android:name=".Executors" />
+        <activity android:name=".Gifts_and_legacy" />
+        <activity android:name=".Gifts" />
+        <activity android:name=".Gifts_and_Legacy2" />
+        <activity android:name=".Gifts2" />
+        <activity android:name=".Residue_of_estate" />
+        <activity android:name=".Residue_of_estate2" />
+        <activity android:name=".Spouse" />
+        <activity android:name=".Submission" />
+        <activity android:name=".thankyou" />
+        <activity android:name=".thankyou2" />
+        <activity android:name=".sign_up" />
+        <activity android:name=".Terms_condition" />
+        <activity android:name=".Info_block" />
+        <activity android:name=".thankyou3" />
+        <activity android:name=".logina1" />
+        <activity
+            android:name=".video"
+            android:gravity="center" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".Edit" />
+    </application>
+
+</manifest>
