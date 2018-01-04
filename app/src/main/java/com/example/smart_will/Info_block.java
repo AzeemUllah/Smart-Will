@@ -97,6 +97,10 @@ public class Info_block extends AppCompatActivity {
         } else if (r1.getText().toString().equals("No") && r2.getText().toString().equals("No") && r3.getText().toString().equals("No"))
 
         {
+            supportDbConn();
+
+
+
 
 
             String url5 = "http://128.199.50.69/api/api-cleanResidue.php";
@@ -118,6 +122,7 @@ public class Info_block extends AppCompatActivity {
 
         {
 
+            supportDbConn();
 
             String url5 = "http://128.199.50.69/api/api-equalShare.php";
             String message5 = "";
@@ -141,10 +146,12 @@ public class Info_block extends AppCompatActivity {
         else {
             if(getIntent().hasExtra("back")){
                 Log.e("Residue", "has back while redirect");
+                supportDbConn();
                 Intent intent1 = new Intent(this, Residue_of_estate.class).putExtra("forwards",true).putExtra("back",true);
                 startActivity(intent1);
             }
             else {
+                supportDbConn();
                 Log.e("Residue", "doesnt has back while redirect");
                 Intent intent1 = new Intent(this, Residue_of_estate.class).putExtra("stop", "no");
                 startActivity(intent1);
@@ -180,6 +187,38 @@ public class Info_block extends AppCompatActivity {
             }
             catch(Exception e){
                 Log.e("JSON error: " , e.toString());
+            }
+        }
+
+        @Override
+        protected void onPreExecute() {
+            // TODO: Loader and stuff to add later here.
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {}
+    }
+
+
+
+
+    private class supportDecission extends AsyncTask<String, Void, String> {
+        @Override
+        protected String doInBackground(String... params) {
+            return NetworkUtilities.postData(params[0],params[1]);
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            Log.e("resut new", result);
+            try{
+                JSONObject jsonResult = new JSONObject(result);
+                String status = jsonResult.getString("Status");
+
+                Log.e("data response new", jsonResult.toString());
+            }
+            catch(Exception e){
+                Log.e("JSON error new: " , e.toString());
             }
         }
 
@@ -298,6 +337,30 @@ public class Info_block extends AppCompatActivity {
 
 
 
+
+    public void supportDbConn(){
+        Log.e("Options:",  r1.getText().toString() + " " + r2.getText().toString() + " " +r3.getText().toString());
+
+
+
+        String url6 = "http://128.199.50.69/api/api-support_decission.php";
+        String message6 = "";
+        try {
+            JSONObject jsonBody = new JSONObject();
+            jsonBody.put("user_id", session.getSession()); //TODO: Session id validation (if/else)
+            jsonBody.put("option1", r1.getText().toString()); //TODO: Session id validation (if/else)
+            jsonBody.put("option2", r2.getText().toString()); //TODO: Session id validation (if/else)
+            jsonBody.put("option3", r3.getText().toString()); //TODO: Session id validation (if/else)
+            message6 = jsonBody.toString();
+            Log.e("msg new:",  message6);
+        } catch (Exception e) {
+            Log.e("JSON error new: ", e.toString());
+            Toast.makeText(getApplicationContext(), "An Unexpected Error Occured! Please Try again.", Toast.LENGTH_SHORT).show();
+        }
+        Info_block.supportDecission sd = new Info_block.supportDecission();
+        sd.execute(url6, message6);
+
+    }
 
 
 

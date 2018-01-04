@@ -249,7 +249,7 @@ public class Spouse extends AppCompatActivity  {
     private class ParallelExec extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
-
+            Log.e("Spouse url" , params[0]);
             return NetworkUtilities.postData(params[0],params[1]);
         }
 

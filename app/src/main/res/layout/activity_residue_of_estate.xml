@@ -214,6 +214,7 @@
                     android:layout_height="45dp"
                     android:background="@drawable/white_button"
                     android:text="Add Step Children"
+                    android:visibility="gone"
                     android:textColor="#acacae"
                     android:textAllCaps="false"
                     android:textSize="16dp"

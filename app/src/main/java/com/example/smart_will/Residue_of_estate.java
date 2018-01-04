@@ -136,11 +136,11 @@ public class Residue_of_estate extends AppCompatActivity {
                     } else if (Integer.parseInt(roe5.getText().toString()) + estateTotal < 100) {
                         roeNext.setVisibility(View.GONE);
                         addbeneficary.setVisibility(View.VISIBLE);
-                        addstep.setVisibility(View.VISIBLE);
+                        addstep.setVisibility(View.GONE);
                     } else if (Integer.parseInt(roe5.getText().toString()) + estateTotal == 100) {
                         roeNext.setVisibility(View.GONE);
                         addbeneficary.setVisibility(View.VISIBLE);
-                        addstep.setVisibility(View.VISIBLE);
+                        addstep.setVisibility(View.GONE);
                     }
                 }
             }

@@ -188,7 +188,7 @@
                 android:gravity="center"
                 android:backgroundTint="@android:color/darker_gray"
                 android:inputType="textEmailAddress"
-                android:hint="Eg:All you need is love by the beatless"
+                android:hint="Eg:All you need is love by the beatles"
                 android:textSize="16dp"/>
         </LinearLayout>
 
